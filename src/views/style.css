@@ -1,0 +1,7 @@
+.cb{
+    -fx-margin-bottom: 10px;
+}
+
+.vbox, canvas, hbox{
+    -fx-border-color: BLACK;
+}

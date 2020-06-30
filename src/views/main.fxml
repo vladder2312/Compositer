@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox fx:id="hbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="hbox" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="160.0" styleClass="vbox">
+         <children>
+            <Label text="Место" />
+            <ComboBox fx:id="placeCB" prefWidth="150.0" styleClass="cb">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin></ComboBox>
+            <Label text="Крыша" />
+            <ComboBox fx:id="roofCB" prefWidth="150.0" styleClass="cb">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin></ComboBox>
+            <Label text="Стена" />
+            <ComboBox fx:id="wallCB" prefWidth="150.0" styleClass="cb">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin></ComboBox>
+            <Label text="Окно" />
+            <ComboBox fx:id="windowCB" prefWidth="150.0" styleClass="cb">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin></ComboBox>
+            <Label text="Дверь" />
+            <ComboBox fx:id="doorCB" prefWidth="150.0" styleClass="cb">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin></ComboBox>
+            <Label text="Дымоход" />
+            <ComboBox fx:id="chimneyCB" prefWidth="150.0" styleClass="cb">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin></ComboBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="rotateBtn" mnemonicParsing="false" text="Повернуть на" />
+                  <TextField fx:id="angleTF" prefHeight="25.0" prefWidth="60.0" promptText="0" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="5.0" top="10.0" />
+         </padding>
+      </VBox>
+      <Canvas fx:id="canvas" height="400.0" width="440.0" />
+   </children>
+</HBox>
